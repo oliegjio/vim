@@ -41,14 +41,22 @@ let mapleader=","
 let g:ctrlp_show_hidden=1
 let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
+
+" Sets the working directoy to current file's directory
+autocmd BufEnter * lcd %:p:h
+
 set splitbelow
 set splitright
 "         copy - "+y
 "         paste - "+p
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-k> <C-w><C-k>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-l> <C-w><C-l>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
+"nnoremap <C-j> <C-w><C-j>
+"nnoremap <C-k> <C-w><C-k>
+"nnoremap <C-l> <C-w><C-l>
+"nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 map <leader>k :NERDTreeToggle<CR>
