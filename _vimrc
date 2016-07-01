@@ -80,6 +80,11 @@ map <leader>W :NERDTreeClose<CR>:bufdo bd<CR>
 map <leader>e :only<CR>
 map <leader>E :tabonly<CR>
 map <leader>r :BufOnly<CR>
+map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
+map <leader>d :execute "tabmove" tabpagenr() <CR>
+map <C-v> "+p
+map <C-c> "+y
+set pastetoggle=<F2>
 map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
 map = <C-w>+
