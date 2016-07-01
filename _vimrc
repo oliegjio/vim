@@ -1,5 +1,5 @@
 execute pathogen#infect()
-set guifont=Consolas:h18
+set guifont=Consolas:h14
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-m>'
 let NERDTreeMinimalUI=1
@@ -41,21 +41,39 @@ let mapleader=","
 let g:ctrlp_show_hidden=1
 let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
+
+" Sets the working directoy to current file's directory
+autocmd BufEnter * lcd %:p:h
+
 set splitbelow
 set splitright
 "         copy - "+y
 "         paste - "+p
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-k> <C-w><C-k>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-l> <C-w><C-l>:resize 1000<CR>:vertical resize 95<CR>
+nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
+"nnoremap <C-j> <C-w><C-j>
+"nnoremap <C-k> <C-w><C-k>
+"nnoremap <C-l> <C-w><C-l>
+"nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
-map <leader>k :NERDTreeToggle<CR>
+map <leader>k :NERDTreeToggle<CR>:resize 1000<CR>:vertical resize 95<CR>
+"map <leader>k :NERDTreeToggle<CR>
 map <leader>n :nohl<CR>
 map <leader>j :tabprevious<CR>
-map <l,ader>l :tabnext<CR>
+map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>
+map <leader>q :tabclose<CR>
+map <leader>Q :NERDTreeClose<CR>:bufdo bd<CR>
+map <leader>a :bprevious<CR>
+map <leader>f :bnext<CR>
+map <leader>w :bd<CR>
+map <leader>W :NERDTreeClose<CR>:bufdo bd<CR>
+map <leader>e :only<CR>
+map <leader>E :tabonly<CR>
+map <leader>r :BufOnly<CR>
 map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
 map = <C-w>+
