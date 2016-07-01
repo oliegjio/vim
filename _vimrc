@@ -82,6 +82,8 @@ map <leader>E :tabonly<CR>
 map <leader>r :BufOnly<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
 map <leader>d :execute "tabmove" tabpagenr() <CR>
+map <C-Up> ddkkp
+map <C-Down> ddp
 map <C-v> "+p
 map <C-c> "+y
 set pastetoggle=<F2>
