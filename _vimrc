@@ -1,5 +1,11 @@
 execute pathogen#infect()
 set guifont=Consolas:h14
+set lines=40 columns=130
+" gVim remove toolbars and scrolls
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-m>'
 let NERDTreeMinimalUI=1
