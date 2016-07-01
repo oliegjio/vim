@@ -71,15 +71,15 @@ map <leader>n :nohl<CR>
 map <leader>j :tabprevious<CR>
 map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>
-map <leader>q :tabclose<CR>
-map <leader>Q :NERDTreeClose<CR>:bufdo bd<CR>
+map <leader>q :tabclose!<CR>
+map <leader>Q :NERDTreeClose<CR>:bufdo bd!<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
-map <leader>w :bd<CR>
-map <leader>W :NERDTreeClose<CR>:bufdo bd<CR>
+map <leader>w :bd!<CR>
+map <leader>W :NERDTreeClose<CR>:bufdo bd!<CR>
 map <leader>e :only<CR>
 map <leader>E :tabonly<CR>
-map <leader>r :BufOnly<CR>
+map <leader>r :BufOnly!<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
 map <leader>d :execute "tabmove" tabpagenr() <CR>
 map <C-Up> ddkkp
