@@ -1,18 +1,9 @@
-execute pathogen#infect()
-set guifont=Consolas:h14
-set lines=40 columns=130
-" gVim remove toolbars and scrolls
-set guioptions-=m  "remove menu bar
-set guioptions-=T  "remove toolbar
-set guioptions-=r  "remove right-hand scroll bar
-set guioptions-=L  "remove left-hand scroll bar
-let g:user_emmet_mode='a'
-let g:user_emmet_leader_key='<C-y>'
+_emmet_leader_key='<C-y>'
 let g:NERDTreeMinimalUI=1
 set fillchars+=stl:\ ,stlnc:\
 let b:vcm_tab_complete = 'dict'
 "set guifont=Monaco\ for\ Powerline:h12
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
   endif
