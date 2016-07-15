@@ -1,5 +1,15 @@
-_emmet_leader_key='<C-y>'
+execute pathogen#infect()
+set guifont=Consolas:h14
+set lines=40 columns=130
+" gVim remove toolbars and scrolls
+set guioptions-=m  "remove menu bar
+set guioptions-=T  "remove toolbar
+set guioptions-=r  "remove right-hand scroll bar
+set guioptions-=L  "remove left-hand scroll bar
+let g:user_emmet_mode='a'
+let g:user_emmet_leader_key='<C-y>'
 let g:NERDTreeMinimalUI=1
+let NERDTreeShowBookmarks=1
 set fillchars+=stl:\ ,stlnc:\
 let b:vcm_tab_complete = 'dict'
 "set guifont=Monaco\ for\ Powerline:h12
@@ -87,9 +97,9 @@ map <C-Up> ddkkp
 map <C-Down> ddp
 map <C-v> "+p
 map <C-c> "+y
-map <C-a> vggG$
+map <C-a> gg"*yG
 map <C-x> "+ygvd
-map <C-f> :vimgrep 
+map <C-g> :vimgrep 
 map <C-b> :Bookmark 
 map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
