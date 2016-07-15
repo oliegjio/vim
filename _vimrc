@@ -8,7 +8,7 @@ set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
-let g:NERDTreeMinimalUI=2
+let g:NERDTreeMinimalUI=1
 set fillchars+=stl:\ ,stlnc:\
 "set guifont=Monaco\ for\ Powerline:h12
 let g:airline_powerline_fonts=1
@@ -67,6 +67,8 @@ nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
+map <C-f> jjj
+map <C-s> kkk
 map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
