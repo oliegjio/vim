@@ -7,11 +7,10 @@ set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
 let g:user_emmet_mode='a'
-let g:user_emmet_leader_key='<C-m>'
-let NERDTreeMinimalUI=1
+let g:user_emmet_leader_key='<C-y>'
+let g:NERDTreeMinimalUI=2
 set fillchars+=stl:\ ,stlnc:\
 "set guifont=Monaco\ for\ Powerline:h12
-map <leader>o :NERDTreeToggle<CR>
 let g:airline_powerline_fonts=1
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -48,6 +47,8 @@ let g:ctrlp_show_hidden=1
 let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
 
+let NERDTreeShowHidden=1
+
 " Sets the working directoy to current file's directory
 autocmd BufEnter * lcd %:p:h
 
@@ -65,14 +66,19 @@ nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
 "nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
-map <leader>k :NERDTreeToggle<CR>:resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
+map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>
+map <leader>m :NERDTreeFind<CR>
+map <leader>1 :vertical resize 30<CR>
+map <leader>2 :vertical resize 55<CR>
+map <leader>3 :vertical resize 80<CR>
+map <leader>z :split<CR>
+map <leader>x :vsplit<CR>
 map <leader>n :nohl<CR>
 map <leader>j :tabprevious<CR>
 map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>
 map <leader>q :tabclose!<CR>
-map <leader>Q :NERDTreeClose<CR>:bufdo bd!<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
 map <leader>w :bd!<CR>
@@ -89,8 +95,8 @@ map <C-c> "+y
 set pastetoggle=<F2>
 map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
-map = <C-w>+
-map - <C-w>-
+map = 4<C-w>+
+map - 4<C-w>-
 map <C-d> <C-d>zz
 map <C-u> <C-u>zz
 set mouse=a
@@ -98,7 +104,7 @@ set autowrite
 set autochdir
 set showmode
 set showcmd
-set nowrap
+set wrap
 set wildmenu
 set wildmode=list:longest,full
 set autoindent
