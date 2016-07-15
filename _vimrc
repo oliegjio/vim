@@ -10,6 +10,7 @@ let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
 let g:NERDTreeMinimalUI=1
 set fillchars+=stl:\ ,stlnc:\
+let b:vcm_tab_complete = 'dict'
 "set guifont=Monaco\ for\ Powerline:h12
 let g:airline_powerline_fonts=1
 if !exists('g:airline_symbols')
@@ -67,9 +68,10 @@ nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
+map ' ,<ESC>
 map <C-f> jjj
 map <C-s> kkk
-map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>
+map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>B
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
@@ -94,13 +96,19 @@ map <C-Up> ddkkp
 map <C-Down> ddp
 map <C-v> "+p
 map <C-c> "+y
-set pastetoggle=<F2>
+map <C-a> vggG$
+map <C-x> "+ygvd
+map <C-f> :vimgrep 
+map <C-b> :Bookmark 
 map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
+map < <gv
+map > >gv
 map = 4<C-w>+
 map - 4<C-w>-
 map <C-d> <C-d>zz
 map <C-u> <C-u>zz
+set pastetoggle=<F2>
 set mouse=a
 set autowrite
 set autochdir
