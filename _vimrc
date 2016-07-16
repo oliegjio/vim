@@ -10,6 +10,7 @@ let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
 let g:NERDTreeMinimalUI=1
 let NERDTreeShowBookmarks=1
+let g:airline#extensions#tabline#fnamemod = ':t'
 set fillchars+=stl:\ ,stlnc:\
 let b:vcm_tab_complete = 'dict'
 "set guifont=Monaco\ for\ Powerline:h12
@@ -69,6 +70,8 @@ nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
+imap <C-s> <Plug>snipMateTrigger
+smap <C-s> <Plug>snipMateTrigger
 map ' ,<ESC>
 map <C-f> jjj
 map <C-s> kkk
