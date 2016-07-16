@@ -96,6 +96,7 @@ map <leader>d :execute "tabmove" tabpagenr() <CR>
 map <C-Up> ddkkp
 map <C-Down> ddp
 map <C-v> "+p
+imap <C-v> <ESC>"+pi
 map <C-c> "+y
 map <C-a> ggvG$
 map <C-x> "+ygvd
