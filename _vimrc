@@ -72,7 +72,7 @@ map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 map ' ,<ESC>
 map <C-f> jjj
 map <C-s> kkk
-map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>B
+map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
@@ -97,7 +97,7 @@ map <C-Up> ddkkp
 map <C-Down> ddp
 map <C-v> "+p
 map <C-c> "+y
-map <C-a> gg"*yG
+map <C-a> ggvG$
 map <C-x> "+ygvd
 map <C-g> :vimgrep 
 map <C-b> :Bookmark 
