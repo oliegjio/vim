@@ -62,17 +62,17 @@ nnoremap <C-j> <C-w><C-j>:resize 1000<CR>:vertical resize 95<CR>
 nnoremap <C-k> <C-w><C-k>:resize 1000<CR>:vertical resize 95<CR>
 nnoremap <C-l> <C-w><C-l>:resize 1000<CR>:vertical resize 95<CR>
 nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
-"nnoremap <C-j> <C-w><C-j>
-"nnoremap <C-k> <C-w><C-k>
-"nnoremap <C-l> <C-w><C-l>
-"nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
 map ' ,<ESC>
 map <C-f> jjj
 map <C-s> kkk
-map <leader>k :NERDTreeToggle<CR>:vertical resize 35<CR>
+map <leader>k :NERDTreeToggle<CR>:vertical resize 34<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
