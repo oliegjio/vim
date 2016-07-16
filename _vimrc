@@ -59,10 +59,10 @@ set splitbelow
 set splitright
 "         copy - "+y
 "         paste - "+p
-nnoremap <C-j> <C-w><C-j>:resize 1000<CR>:vertical resize 95<CR>
-nnoremap <C-k> <C-w><C-k>:resize 1000<CR>:vertical resize 95<CR>
-nnoremap <C-l> <C-w><C-l>:resize 1000<CR>:vertical resize 95<CR>
-nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
+" nnoremap <C-j> <C-w><C-j>:resize 1000<CR>:vertical resize 95<CR>
+" nnoremap <C-k> <C-w><C-k>:resize 1000<CR>:vertical resize 95<CR>
+" nnoremap <C-l> <C-w><C-l>:resize 1000<CR>:vertical resize 95<CR>
+" nnoremap <C-h> <C-w><C-h>:resize 1000<CR>:vertical resize 95<CR>
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
@@ -71,8 +71,8 @@ nnoremap <C-h> <C-w><C-h>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
 map ' ,<ESC>
-map <C-f> jjj
-map <C-s> kkk
+map <C-f> 5j
+map <C-s> 5k
 map <leader>k :NERDTreeToggle<CR>:vertical resize 34<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
@@ -83,7 +83,7 @@ map <leader>x :vsplit<CR>
 map <leader>n :nohl<CR>
 map <leader>j :tabprevious<CR>
 map <leader>l :tabnext<CR>
-map <leader>t :tabnew<CR>
+map <leader>t :tabnew<CR>:NERDTreeToggle<CR>:vertical resize 34<CR>
 map <leader>q :tabclose!<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
@@ -119,6 +119,7 @@ autocmd BufEnter * silent! lcd %:p:h
 set showmode
 set showcmd
 set wrap
+set equalalways
 set wildmenu
 set wildmode=list:longest,full
 set autoindent
@@ -139,11 +140,11 @@ set smartcase
 set gdefault
 set incsearch
 set showmatch
-set winwidth=95
+" set winwidth=95
 set winheight=10
-set winminheight=10
-set winminwidth=10
-set winheight=999
+" set winminheight=10
+" set winminwidth=10
+" set winheight=999
 set nolist
 set noswapfile
 set visualbell
