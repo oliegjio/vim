@@ -112,7 +112,8 @@ map <C-u> <C-u>zz
 set pastetoggle=<F2>
 set mouse=a
 set autowrite
-set autochdir
+" set autochdir
+autocmd BufEnter * silent! lcd %:p:h
 set showmode
 set showcmd
 set wrap
