@@ -70,8 +70,6 @@ nnoremap <C-h> <C-w><C-h>
 "inoremap <LEFT><DELETE>
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map <leader>k :NERDTreeToggle<CR>
-imap <C-s> <Plug>snipMateTrigger
-smap <C-s> <Plug>snipMateTrigger
 map ' ,<ESC>
 map <C-f> jjj
 map <C-s> kkk
