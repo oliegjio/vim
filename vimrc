@@ -54,6 +54,7 @@ set nolist
 set noswapfile
 set visualbell
 set colorcolumn=80
+set noesckeys
 
 colorscheme monokai
 syntax on
