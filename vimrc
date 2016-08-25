@@ -110,7 +110,7 @@ map <leader>3 :vertical resize 80<CR>
 map <leader>z :split<CR>
 map <leader>x :vsplit<CR>
 map <leader>n :nohl<CR>
-map <leader>j :tabprevious<CR>
+map <leader>h :tabprevious<CR>
 map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>:NERDTreeToggle<CR>:vertical resize 34<CR>
 map <leader>a :bprevious<CR>
