@@ -64,21 +64,20 @@ filetype plugin indent on
 hi CursorLine cterm=NONE ctermbg=black guibg=black
 hi CursorColumn cterm=NONE ctermbg=black guibg=black
 hi ColorColumn guibg=black
-hi ColorColumn ctermbg=darkyellow
 
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
 let g:NERDTreeMinimalUI=1
 let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline_symbols.space = "\ua0"
+let g:airline_symbols_space = "\ua0"
 let g:ctrlp_show_hidden=1
 let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
 let bclose_multiple = 0
-let mapleader=","
+let mapleader="\<Space>"
 let b:vcm_tab_complete = 'dict'
 
 if !exists('g:airline_symbols')
@@ -96,10 +95,12 @@ nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
 imap <C-v> <ESC>"+pi
+map <C-v> "+p
+map <C-c> "+y
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
-map ' ,<ESC>
-map <C-f> 5j
-map <C-s> 5k
+" map ' ,<ESC>
+" map <C-f> 5j
+" map <C-s> 5k
 map <leader>k :NERDTreeToggle<CR>:vertical resize 34<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
@@ -111,20 +112,18 @@ map <leader>n :nohl<CR>
 map <leader>j :tabprevious<CR>
 map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>:NERDTreeToggle<CR>:vertical resize 34<CR>
-map <leader>q :tabclose!<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
+map <leader>q :tabclose!<CR>
 map <leader>w :bd!<CR>
 map <leader>W :NERDTreeClose<CR>:bufdo bd!<CR>
-map <leader>e :only<CR>
-map <leader>E :tabonly<CR>
+" map <leader>e :only<CR>
+map <leader>e :tabonly<CR>
 map <leader>r :BufOnly!<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
 map <leader>d :execute "tabmove" tabpagenr() <CR>
 map <C-Up> ddkkp
 map <C-Down> ddp
-map <C-v> "+p
-map <C-c> "+y
 map <C-a> ggvG$
 map <C-x> "+ygvd
 map <C-g> :vimgrep 
