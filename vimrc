@@ -12,7 +12,7 @@ execute pathogen#infect()
 set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set mouse=r
-set nocompatible
+" set nocompatible
 set nospell
 set t_Co=256
 set cursorcolumn
@@ -77,6 +77,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
+let NERDTreeQuitOnOpen=1
 let bclose_multiple = 0
 let mapleader="\<Space>"
 let b:vcm_tab_complete = 'dict'
@@ -98,6 +99,8 @@ nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
 nnoremap <C-h> <C-w><C-h>
 imap <C-v> <ESC>"+pi
+imap <C-J> <Plug>snipMateNextOrTrigger
+smap <C-J> <Plug>snipMateNextOrTrigger
 map <C-v> "+p
 map <C-c> "+y
 map <leader>, :resize 1000<CR>:vertical resize 95<CR>
