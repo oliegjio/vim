@@ -104,22 +104,22 @@ map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 " map ' ,<ESC>
 " map <C-f> 5j
 " map <C-s> 5k
-map <leader>k :NERDTreeToggle<CR>:vertical resize 34<CR>
+map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 34<CR>
 map <leader>m :NERDTreeFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
 map <leader>3 :vertical resize 80<CR>
-map <leader>z :split<CR>
-map <leader>x :vsplit<CR>
+map <leader>x :split<CR>
+map <leader>z :vsplit<CR>
 map <leader>n :nohl<CR>
 map <leader>h :tabprevious<CR>
 map <leader>l :tabnext<CR>
-map <leader>t :tabnew<CR>:NERDTreeToggle<CR>:vertical resize 34<CR>
+map <leader>t :tabnew<CR>:NERDTreeTabsToggle<CR>:vertical resize 34<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
 map <leader>q :tabclose!<CR>
 map <leader>w :bd!<CR>
-map <leader>W :NERDTreeClose<CR>:bufdo bd!<CR>
+map <leader>W :NERDTreeTabsClose<CR>:bufdo bd!<CR>
 " map <leader>e :only<CR>
 map <leader>e :tabonly<CR>
 map <leader>r :BufOnly!<CR>
