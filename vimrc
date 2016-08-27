@@ -12,7 +12,7 @@ execute pathogen#infect()
 set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set mouse=r
-" set nocompatible
+set nocompatible
 set nospell
 set t_Co=256
 set cursorcolumn
@@ -77,7 +77,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
-let NERDTreeQuitOnOpen=1
+" let NERDTreeQuitOnOpen=1
 let bclose_multiple = 0
 let mapleader="\<Space>"
 let b:vcm_tab_complete = 'dict'
@@ -108,7 +108,7 @@ map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 " map <C-f> 5j
 " map <C-s> 5k
 map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 34<CR>
-map <leader>m :NERDTreeFind<CR>
+map <leader>m :NERDTreeTabsFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
 map <leader>3 :vertical resize 80<CR>
@@ -117,7 +117,7 @@ map <leader>z :vsplit<CR>
 map <leader>n :nohl<CR>
 map <leader>h :tabprevious<CR>
 map <leader>l :tabnext<CR>
-map <leader>t :tabnew<CR>:NERDTreeTabsToggle<CR>:vertical resize 34<CR>
+map <leader>t :tabnew<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
 map <leader>q :tabclose!<CR>
@@ -127,7 +127,7 @@ map <leader>W :NERDTreeTabsClose<CR>:bufdo bd!<CR>
 map <leader>e :tabonly<CR>
 map <leader>r :BufOnly!<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
-map <leader>d :execute "tabmove" tabpagenr() <CR>
+map <leader>d :execute "tabmove" tabpagenr() + 1 <CR>
 map <C-Up> ddkkp
 map <C-Down> ddp
 map <C-a> ggvG$
