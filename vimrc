@@ -34,12 +34,14 @@ set wrap
 set equalalways
 set wildmenu
 set wildmode=list:longest,full
-set autoindent
 set gdefault
+
+" set autoindent
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+" set tabstop=2
+set softtabstop=2
+
 set foldmethod=manual
 set ignorecase
 set hlsearch
@@ -77,7 +79,8 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:airline#extensions#tabline#enabled=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
-" let NERDTreeQuitOnOpen=1
+let g:NERDTreeWinSize=60
+let NERDTreeQuitOnOpen=0
 let bclose_multiple = 0
 let mapleader="\<Space>"
 let b:vcm_tab_complete = 'dict'
@@ -103,11 +106,11 @@ imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 map <C-v> "+p
 map <C-c> "+y
-map <leader>, :resize 1000<CR>:vertical resize 95<CR>
-" map ' ,<ESC>
-" map <C-f> 5j
-" map <C-s> 5k
-map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 34<CR>
+"map <leader>, :resize 1000<CR>:vertical resize 95<CR>
+"map ' ,<ESC>
+"map <C-f> 5j
+"map <C-s> 5k
+map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 45<CR>
 map <leader>m :NERDTreeTabsFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
@@ -138,7 +141,8 @@ map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
 map < <gv
 map > >gv
-map = 4<C-w>+
-map - 4<C-w>-
+"map = 4<C-w>+
+"map - 4<C-w>-
+map = :vertical resize +5 <CR>
+map - :vertical resize -5 <CR>
 map <C-d> <C-d>zz
-map <C-u> <C-u>zz
