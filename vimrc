@@ -1,5 +1,5 @@
 set nocp
-execute pathogen#infect()
+call pathogen#infect()
 
 """""""""""" gVim remove toolbars and scrolls, set console size
 " set guioptions-=m  "remove menu bar
