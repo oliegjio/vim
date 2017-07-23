@@ -124,12 +124,12 @@ map <leader>l :tabnext<CR>
 map <leader>t :tabnew<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
-map <leader>q :tabclose!<CR>
-map <leader>w :bd!<CR>
-map <leader>W :NERDTreeTabsClose<CR>:bufdo bd!<CR>
+map <leader>w :tabclose!<CR>
+" map <leader>w :bd!<CR>
 " map <leader>e :only<CR>
-map <leader>e :tabonly<CR>
-map <leader>r :BufOnly!<CR>
+" map <leader>r :BufOnly!<CR>
+map <leader>W :NERDTreeTabsClose<CR>:bufdo bd!<CR>
+map <leader>e :tabonly<CR> :BufOnly!<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
 map <leader>d :execute "tabmove" tabpagenr() + 1 <CR>
 map <C-Up> ddkkp
