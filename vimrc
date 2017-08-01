@@ -57,7 +57,7 @@ set noswapfile
 set visualbell
 set colorcolumn=80
 set noesckeys
-
+set clipboard=unnamedplus
 colorscheme monokai
 syntax on
 filetype on
@@ -107,6 +107,7 @@ imap <C-J> <Plug>snipMateNextOrTrigger
 smap <C-J> <Plug>snipMateNextOrTrigger
 map <C-v> "+p
 map <C-c> "+y
+map <Tab> <Nop>
 "map <leader>, :resize 1000<CR>:vertical resize 95<CR>
 "map ' ,<ESC>
 "map <C-f> 5j
