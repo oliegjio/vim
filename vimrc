@@ -38,9 +38,9 @@ set gdefault
 
 " set autoindent
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 " set tabstop=2
-set softtabstop=2
+set softtabstop=4
 
 set foldmethod=manual
 set ignorecase
@@ -85,6 +85,8 @@ let NERDTreeQuitOnOpen=0
 let bclose_multiple = 0
 let mapleader="\<Space>"
 let b:vcm_tab_complete = 'dict'
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|vendor)$'
 
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
