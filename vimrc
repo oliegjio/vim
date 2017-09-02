@@ -96,6 +96,7 @@ let g:airline_powerline_fonts=0
 let g:airline_symbols_ascii = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline_section_warning=''
 let g:airline_left_sep = ''
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
