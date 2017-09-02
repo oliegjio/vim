@@ -27,7 +27,6 @@ set splitright
 set pastetoggle=<F2>
 set mouse=a
 set autowrite
-autocmd BufEnter * silent! lcd %:p:h
 set showmode
 set showcmd
 set wrap
@@ -98,7 +97,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 """""""""""" Sets the working directoy to current file's directory
-autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * lcd %:p:h
+"autocmd BufEnter * silent! lcd %:p:h
 
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
