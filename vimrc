@@ -42,7 +42,8 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set mouse=r
 set nospell
-set t_Co=256
+" set t_Co=256
+set t_Co=3
 set cursorcolumn
 set cursorline 
 set pastetoggle=<F2>
@@ -60,6 +61,7 @@ set showcmd
 set wrap
 set equalalways
 set wildmenu
+set autoread
 set wildmode=list:longest,full
 set gdefault
 " set autoindent
@@ -83,8 +85,12 @@ set visualbell
 set colorcolumn=80
 set noesckeys
 set clipboard=unnamedplus
-colorscheme monokai
-syntax on
+" colorscheme monokai
+colorscheme bw
+syntax off
+
+" Fix tabline for black-and-white colorscheme 
+autocmd BufEnter,BufLeave,WinEnter,WinLeave * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
 
 hi CursorLine cterm=NONE ctermbg=black guibg=black
 hi CursorColumn cterm=NONE ctermbg=black guibg=black
