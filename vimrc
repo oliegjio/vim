@@ -90,7 +90,7 @@ colorscheme bw
 syntax off
 
 " Fix tabline for black-and-white colorscheme 
-autocmd BufEnter,BufLeave,WinEnter,WinLeave * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
+autocmd VimEnter * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
 
 hi CursorLine cterm=NONE ctermbg=black guibg=black
 hi CursorColumn cterm=NONE ctermbg=black guibg=black
