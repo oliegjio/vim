@@ -132,7 +132,7 @@ let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|vendor)$'
 let g:NERDTreeMinimalUI=1
 let NERDTreeShowBookmarks=1
 let NERDTreeShowHidden=1
-let g:NERDTreeWinSize=45
+let g:NERDTreeWinSize=35
 let NERDTreeQuitOnOpen=0
 let bclose_multiple = 0
 let mapleader="\<Space>"
@@ -160,7 +160,7 @@ map <Tab> <Nop>
 " map ' ,<ESC>
 " map <C-f> 5j
 " map <C-s> 5k
-map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 45<CR>
+map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 35<CR>
 map <leader>m :NERDTreeTabsFind<CR>
 map <leader>1 :vertical resize 30<CR>
 map <leader>2 :vertical resize 55<CR>
