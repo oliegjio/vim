@@ -1,1 +1,1 @@
-Run: `sudo install.sh`.
+For installation run: `sudo ./install.sh`.
