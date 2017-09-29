@@ -6,6 +6,6 @@ mkdir -p /usr/share/vim/vim80/colors
 cp vimrc /etc/vimrc
 cp .vimrc /home/archie/.vimrc
 cp .vimrc /root/.vimrc
-cp -r bundle/* /usr/share/vim/vim80/bundle/
-cp -r colors/* /usr/share/vim/vim80/colors/
+rsync -C --exclude=".gitkeep" bundle/* /usr/share/vim/vim80/bundle/
+rsync -C --exclude=".gitkeep" colors/* /usr/share/vim/vim80/colors/
 vim +PluginInstall +qall
