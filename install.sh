@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git submodule update --init --recursive
+git submodule update --recursive --remote
 mkdir -p /usr/share/vim/vim80/bundle
 mkdir -p /usr/share/vim/vim80/colors
 cp vimrc /etc/vimrc
