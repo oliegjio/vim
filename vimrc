@@ -42,8 +42,8 @@ set fillchars+=stl:\ ,stlnc:\
 set laststatus=2
 set mouse=r
 set nospell
-" set t_Co=256
-set t_Co=3
+set t_Co=256
+" set t_Co=3
 set cursorcolumn
 set cursorline 
 set pastetoggle=<F2>
@@ -66,9 +66,9 @@ set wildmode=list:longest,full
 set gdefault
 " set autoindent
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 " set tabstop=2
-set softtabstop=4
+set softtabstop=2
 set foldmethod=manual
 set ignorecase
 set hlsearch
@@ -85,6 +85,7 @@ set visualbell
 set colorcolumn=80
 set noesckeys
 set clipboard=unnamedplus
+syntax on
 colorscheme monokai
 " colorscheme bw
 
@@ -142,6 +143,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
+
 " Sets the working directoy to current file's directory
 " autocmd BufEnter * lcd %:p:h
 " autocmd BufEnter * silent! lcd %:p:h
