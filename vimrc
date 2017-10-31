@@ -85,16 +85,16 @@ set visualbell
 set colorcolumn=80
 set noesckeys
 set clipboard=unnamedplus
-" colorscheme monokai
-colorscheme bw
-syntax off
+colorscheme monokai
+" colorscheme bw
 
 " Fix tabline for black-and-white colorscheme 
-autocmd VimEnter * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
+" autocmd VimEnter * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
 
-hi CursorLine cterm=NONE ctermbg=black guibg=black
-hi CursorColumn cterm=NONE ctermbg=black guibg=black
-hi ColorColumn guibg=black
+" For BW theme
+" hi CursorLine cterm=NONE ctermbg=black guibg=black
+" hi CursorColumn cterm=NONE ctermbg=black guibg=black
+" hi ColorColumn guibg=black
 
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
