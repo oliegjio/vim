@@ -7,7 +7,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
-" Plugin 'tmhedberg/matchit'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'vim-scripts/tComment'
@@ -25,16 +24,15 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'qbbr/vim-twig'
 Plugin 'digitaltoad/vim-pug'
 Plugin 'crusoexia/vim-monokai'
-" Plugin 'sickill/vim-monokai'
 Plugin 'octol/vim-cpp-enhanced-highlight'
 call vundle#end()
 filetype plugin indent on
 
 " gVim remove toolbars and scrolls, set console size
-" set guioptions-=m  "remove menu bar
-" set guioptions-=T  "remove toolbar
-" set guioptions-=r  "remove right-hand scroll bar
-" set guioptions-=L  "remove left-hand scroll bar
+" set guioptions-=m
+" set guioptions-=T
+" set guioptions-=r
+" set guioptions-=L
 " set guifont=Consolas:h14
 " set lines=40 columns=130
 
@@ -43,7 +41,6 @@ set laststatus=2
 set mouse=r
 set nospell
 set t_Co=256
-" set t_Co=3
 set cursorcolumn
 set cursorline 
 set pastetoggle=<F2>
@@ -64,10 +61,8 @@ set wildmenu
 set autoread
 set wildmode=list:longest,full
 set gdefault
-" set autoindent
 set expandtab
 set shiftwidth=2
-" set tabstop=2
 set softtabstop=2
 set foldmethod=manual
 set ignorecase
@@ -87,15 +82,6 @@ set noesckeys
 set clipboard=unnamedplus
 syntax on
 colorscheme monokai
-" colorscheme bw
-
-" Fix tabline for black-and-white colorscheme 
-" autocmd VimEnter * hi! link airline_tabsel VertSplit | hi! link airline_tabmod VertSplit
-
-" For BW theme
-" hi CursorLine cterm=NONE ctermbg=black guibg=black
-" hi CursorColumn cterm=NONE ctermbg=black guibg=black
-" hi ColorColumn guibg=black
 
 let g:user_emmet_mode='a'
 let g:user_emmet_leader_key='<C-y>'
@@ -127,7 +113,6 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline_highlighting_cache = 1
 let g:ctrlp_show_hidden=1
 let g:ctrlp_working_path_mode = 'ra'
-" let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|vendor)$'
 let g:NERDTreeMinimalUI=1
@@ -144,10 +129,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
-" Sets the working directoy to current file's directory
-" autocmd BufEnter * lcd %:p:h
-" autocmd BufEnter * silent! lcd %:p:h
-
 nnoremap <C-j> <C-w><C-j>
 nnoremap <C-k> <C-w><C-k>
 nnoremap <C-l> <C-w><C-l>
@@ -158,10 +139,6 @@ smap <C-J> <Plug>snipMateNextOrTrigger
 map <C-v> "+p
 map <C-c> "+y
 map <Tab> <Nop>
-" map <leader>, :resize 1000<CR>:vertical resize 95<CR>
-" map ' ,<ESC>
-" map <C-f> 5j
-" map <C-s> 5k
 map <leader>k :NERDTreeTabsToggle<CR>:vertical resize 35<CR>
 map <leader>m :NERDTreeTabsFind<CR>
 map <leader>1 :vertical resize 30<CR>
@@ -176,9 +153,6 @@ map <leader>t :tabnew<CR>
 map <leader>a :bprevious<CR>
 map <leader>f :bnext<CR>
 map <leader>w :tabclose!<CR>
-" map <leader>w :bd!<CR>
-" map <leader>e :only<CR>
-" map <leader>r :BufOnly!<CR>
 map <leader>W :NERDTreeTabsClose<CR>:bufdo bd!<CR>
 map <leader>e :tabonly<CR> :BufOnly!<CR>
 map <leader>s :execute "tabmove" tabpagenr() - 2 <CR>
@@ -193,8 +167,6 @@ map <C-o> 8<C-w><
 map <C-i> 8<C-w>>
 map < <gv
 map > >gv
-" map = 4<C-w>+
-" map - 4<C-w>-
 map = :vertical resize +5 <CR>
 map - :vertical resize -5 <CR>
 map <C-d> <C-d>zz
