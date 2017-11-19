@@ -1,0 +1,29 @@
+set nocp
+filetype off
+
+set rtp+=/usr/share/vim/vim80/bundle/Vundle.vim
+call vundle#begin('/usr/share/vim/vim80/bundle')
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'StanAngeloff/php.vim'
+Plugin 'vim-scripts/tComment'
+Plugin 'tomtom/tlib_vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'vim-airline/vim-airline'
+Plugin 'jwalton512/vim-blade'
+Plugin 'schickling/vim-bufonly'
+Plugin 'skammer/vim-css-color'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'tpope/vim-surround'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'qbbr/vim-twig'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'crusoexia/vim-monokai'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+call vundle#end()
+filetype plugin indent on
